@@ -1,0 +1,27 @@
+p{
+    color:blue;
+}
+body{
+    font-family: sans-serif;
+    font-style:italic;
+    font-variant:small-caps;
+    line-height: 150%;
+    
+    /* shorthand */
+    font:italic small-caps bold 13px/150% arial;
+    
+}
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+/* css variables -root & var() */
+.root{
+    --main-color:orange;
+    --text-color:indigo;
+}
+body{
+    background-color:var(--main-color);
+}
+p{
+    color:var(--text-color) ;
+}

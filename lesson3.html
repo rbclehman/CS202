@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <title>Lesson 3 Forms</title>
+    <style>
+        .von{
+            margin:0;
+            padding:0;
+            position:absolute;
+            top:0;
+            right:0;
+            width:100%;
+            height:100%;
+            z-index:-100;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- container or container-fluid -->
+    <div class="container">
+        <h1>Forms</h1>
+        <form action="welcome.html" method="get" autocomplete="" onsubmit="">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="n1" size="50" required><br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="pass" placeholder="Enter Your Password"><br>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="p"><br>
+        <label for="date">DOB</label><br>
+        <input type="date" name="date" id="dat"><br>
+        <label for="gender">Gender</label>
+        Male:<input type="radio" name="gender" id="gg">
+        Female<input type="radio" name="gender" id="gg"><br>
+        <label for="image">Image Upload</label>
+        <input type="file" name="image" id="ima"><br>
+        <label for="cities">Select Your City</label><br>
+        <section>
+            <option value="">Bellingham</option>
+            <option value="">Seattle</option>
+            <option value="">Portland</option>
+        </section><br>
+
+        <label for="message">Message</label><br>
+        <textarea name="message" id="" cols="30" rows="5"></textarea><br>
+      
+
+        
+        <input class="btn btn-danger" type="submit" value="Send">
+
+        </form>
+    </div>
+
+    <hr>
+    <h3>Audio</h3>
+    <audio controls autoplay loop muted> 
+        <source src="audio.mp3"
+        type="audio/mp3"></audio>
+        <h3>Video</h3>
+        <video autoplay loop plays-inline class="von">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+
+    <div style="margin-top:400px"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
